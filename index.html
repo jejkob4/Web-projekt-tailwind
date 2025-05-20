@@ -7,6 +7,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
         
@@ -19,19 +20,20 @@
 
 <body class="bg-amber-100 archivo-narrow">
     <!-- NAVBAR -->
-    <nav class="bg-amber-400 py-2 px-4 flex items-center font-bold">
-        <!-- Hamburger menu, fixni !!!!!! -->
+    <nav class="bg-amber-400 py-2 px-6 flex items-center font-bold">
+        <!-- Hamburger menu -->
         <input type="checkbox" id="menu-toggle" class="hidden peer" />
         <label for="menu-toggle" class="flex items-center gap-4 flex-1 text-xl text-white sm:hidden cursor-pointer">
             ☰ Menu
         </label>
-        <div id="menu-items" class="hidden peer-checked:block">
-            <div class="absolute w-full bg-amber-500 top-20 left-0 py-3">
+        <div class="hidden peer-checked:block z-10">
+            <div class="absolute w-full bg-amber-500 top-19 left-0 py-3">
                 <a href="#" class="block ml-3 text-xl text-white hover:text-red-600 transition">Nabídka</a>
                 <a href="#" class="block ml-3 text-xl text-white hover:text-red-600 transition">Restaurace</a>
                 <a href="#" class="block ml-3 text-xl text-white hover:text-red-600 transition">Kontakt</a>
             </div>
         </div>
+
         <!-- Items -->
         <div class="flex items-center space-x-2 flex-1 sm:block hidden">
             <a href="#" class="text-xl text-white hover:text-red-600 transition">Nabídka</a>
@@ -53,6 +55,19 @@
             <a href="#" class="text-white text-xl px-4 py-2 bg-red-600 rounded-4xl hover:bg-red-700">Donáška</a>
         </div>
     </nav>
+
+    <!-- img cover-->
+    
+    <div class="w-full">
+        <img class="w-full h-[65vh] object-cover" src="img/carousel/burgers.jpg" alt="">
+        <div class="absolute top-60 left-1/2 transform -translate-x-1/2 text-center">
+            <h1 class="text-white text-4xl font-bold">Chuť, kterou milujete!</h1>
+            <h2 class="text-white text-xl pb-3">Vyberte si to pravé, právě v naší nabídce.</h2>
+            <a href="#" class="text-white text-xl px-4 py-2 bg-red-600 rounded-4xl hover:bg-red-700 font-bold">K nabídce tudy.</a>
+        </div>
+    </div>
+
+    
 
 
 </body>
