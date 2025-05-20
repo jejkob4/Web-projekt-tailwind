@@ -20,7 +20,7 @@
 
 <body class="bg-amber-100 archivo-narrow">
     <!-- NAVBAR -->
-    <nav class="bg-amber-400 py-2 px-6 flex items-center font-bold">
+    <nav class="bg-amber-400 py-2 px-6 flex items-center font-bold sticky top-0 z-10">
         <!-- Hamburger menu -->
         <input type="checkbox" id="menu-toggle" class="hidden peer" />
         <label for="menu-toggle" class="flex items-center gap-4 flex-1 text-xl text-white sm:hidden cursor-pointer">
@@ -52,23 +52,83 @@
 
         <!-- čudlo -->
         <div class="flex-1 flex justify-end">
-            <a href="#" class="text-white text-xl px-4 py-2 bg-red-600 rounded-4xl hover:bg-red-700">Donáška</a>
+            <a href="#" class="text-white text-xl px-4 py-2 bg-red-600 rounded-4xl hover:bg-red-700 transition">Donáška</a>
         </div>
     </nav>
 
     <!-- img cover-->
     
     <div class="w-full">
-        <img class="w-full h-[65vh] object-cover" src="img/carousel/burgers.jpg" alt="">
+        <img class="w-full h-[65vh] object-cover" src="img/cover/burgers.jpg" alt="">
         <div class="absolute top-60 left-1/2 transform -translate-x-1/2 text-center">
             <h1 class="text-white text-4xl font-bold drop-shadow-[0_1.9px_1.9px_rgba(0,0,0,0.8)]">Chuť, kterou milujete!</h1>
             <h2 class="text-white text-xl pb-3 drop-shadow-lg italic">Vyberte si to pravé, právě v naší nabídce.</h2>
-            <a href="#" class="text-white text-xl px-4 py-2 bg-red-600 rounded-4xl hover:bg-red-700 font-bold">K nabídce tudy.</a>
+            <a href="#" class="text-white text-xl px-4 py-2 bg-red-600 rounded-4xl hover:bg-red-700 font-bold transition">K nabídce tudy.</a>
         </div>
     </div>
 
-    
+    <!-- Obsah -->
+    <section class="py-16 w-[90%] sm:w-[70%] mx-auto">
+        <h1 class="text-center font-bold mb-4 text-4xl">Přehled z novinek naší kuchyně</h1>
+        <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 items-center">
+            <span class="bg-amber-300 rounded-xl text-center hover:shadow-lg overflow-hidden transition">
+                <img src="img/grill.jpg" class="h-[200px] w-full object-cover rounded-t-xl">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold mb-2">Sezónní limitka – One Pounder</h3>
+                    <p class="mb-4">Čtyři plátky masa, pětisýrová omáčka. Jen omezenou dobu!</p>
+                    <a href="#" class="text-red-600 hover:text-white text-xl border border-red-600 px-4 py-2 rounded-3xl hover:bg-red-700 font-bold transition">Zjisti více</a>
+                </div>
+            </span>
+            <span class="bg-amber-300 rounded-xl text-center hover:shadow-lg overflow-hidden transition">
+                <img src="img/veggies.jpg" class="h-[200px] w-full object-cover rounded-t-xl">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold mb-2">Veggie Burger</h3>
+                    <p class="mb-4">Veganský, šťavnatý a šetrný k přírodě. Přijď ochutnat!</p>
+                    <a href="#" class="text-red-600 hover:text-white text-xl border border-red-600 px-4 py-2 rounded-3xl hover:bg-red-700 font-bold">Vyzkoušej</a>
+                </div>
+            </span>
+            <span class="bg-amber-300 rounded-xl text-center hover:shadow-lg overflow-hidden transition">
+                <img src="img/mushroom_burger.jpg" class="h-[200px] w-full object-cover rounded-t-xl">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold mb-2">Smash Burger Mania</h3>
+                    <p class="mb-4">Novinka: Smash Burger – tenký plátek masa s křupavými okraji. Zažijte ten rozdíl!</p>
+                    <a href="#" class="text-red-600 hover:text-white text-xl border border-red-600 px-4 py-2 rounded-3xl hover:bg-red-700 font-bold">Objednej hned</a>
+                </div>
+            </span>
+            <span class="bg-amber-300 rounded-xl text-center hover:shadow-lg overflow-hidden transition">
+                <img src="img/family_menu.jpg" class="h-[200px] w-full object-cover rounded-t-xl">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold mb-2">Rodinné menu</h3>
+                    <p class="mb-4">Zažijte s rodinou nepřekonatelnou chuť Smash & Co.!</p>
+                    <a href="#" class="text-red-600 hover:text-white text-xl border border-red-600 px-4 py-2 rounded-3xl hover:bg-red-700 font-bold">Objednej hned</a>
+                </div>
+            </span>
+        </div>
+    </section>
 
 
+    <!-- FOOTER -->
+    <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-4 text-center bg-amber-400 py-8 px-16">
+        <span>
+            <h1 class="text-white text-2xl font-bold">Smash & Co.</h1>
+            <p class="text-white">Havlíčkova 2, Praha 1</p>
+            <p class="text-white">10001 PRAHA</p>
+        </span>
+        <span>
+            <a href="#" class="text-white block hover:underline">Domů</a>
+            <a href="#" class="text-white block hover:underline">Nabídka</a>
+            <a href="#" class="text-white block hover:underline">Restaurace</a>
+            <a href="#" class="text-white block hover:underline">Kontakt</a>
+        </span>
+        <span>
+            <label for="mail" class="text-white block pb-2">Odebírej poštu naší restaurace!</label>
+            <input 
+            type="email"
+            class="px-4 py-2 bg-orange-400 rounded-lg outline-none text-white"
+            placeholder="mail@example.com"
+            />
+            <a class="text-white text-m px-4 py-2 bg-red-600 rounded-lg hover:bg-red-700 transition" href="#">Odeslat!</a>
+        </span>
+    </div>
 </body>
 </html>
